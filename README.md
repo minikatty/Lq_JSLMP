@@ -1,4 +1,7 @@
 # Lq_JSLMP
-One Impulsive Disturbance Suppression Algorithm for Audio Signal
+One impulsive disturbance suppression algorithm for audio signal. 
+Solve an optimization in the adaptive filtering fashion using the *Adam* subgradient descent method.
 
-To be continued...
+
+#  Intro
+ There are three files in the project, file provides the , file provides the , and file provides the . In the experimental formulas, the regularization parameter $\lambda_1$ and $\lambda_2$ correspond to $a$ and $b$ in the code. 
