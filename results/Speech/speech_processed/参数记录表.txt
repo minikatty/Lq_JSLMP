@@ -1,0 +1,12 @@
+SAR mu_alpha  , mu_beta, k_max
+0db	4		4		40
+5db	4.5		4		50
+10db	4.5		4.5		60
+15db	5		4.5		60
+
+lpADM p=1 lamba=0.9 rho=10 rho = rho*1.03 tao=0.9;
+
+jslmp p=1.8 q=0.8  0~5dB: lamba1=0.09  lamba2=0.11; 
+10DB: lamba1=0.07  lamba2=0.11;
+15DB: lamba1=0.06  lamba2=0.11;
+
