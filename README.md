@@ -11,5 +11,7 @@ Solve an optimization in the adaptive filtering fashion using the *Adam* subgrad
  * **synthetic_data** file provides the simulated numerical experiment data, codes and some results. 
  
  # Remark
- In the experimental formulas, the regularization parameter $\lambda_1$ and $\lambda_2$ correspond to $eta1$ and $eta2$ in the code. 
+In the experiment formulas, the regularization parameters $\lambda_1$ and $\lambda_2$ correspond to $eta1$ and $eta2$ in the code. If SAR code and music data are not available on this site https://eti.pg.edu.pl/katedra-systemow-automatyki/ICASSP2017, you can also download them in the  **datasets** and **codes** files in this project.
+  
 # Reference
+The project implementation is inspired by some others' work, the implementation of  SAR algorithm is 
