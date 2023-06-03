@@ -14,4 +14,8 @@ Solve an optimization in the adaptive filtering fashion using the *Adam* subgrad
 In the experiment formulas, the regularization parameters $\lambda_1$ and $\lambda_2$ correspond to $eta1$ and $eta2$ in the code. If SAR code and music data are not available on this site https://eti.pg.edu.pl/katedra-systemow-automatyki/ICASSP2017, you can also download them in the  **datasets** and **codes** files in this project.
   
 # Reference
-The project implementation is inspired by some others' work, the implementation of  SAR algorithm is 
+The implementation of the compared algorithm was downloaded from the researchers' homepage. The main corresponding works are as follows:
+
+[1] Ciołek, Marcin, and Maciej Niedźwiecki. "Detection of impulsive disturbances in archive audio signals." 2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2017.
+
+[2] Wen, Fei, et al. "Robust Sparse Recovery in Impulsive Noise via $\ell_p$ - $\ell_1$ Optimization." IEEE Transactions on Signal Processing 65.1 (2016): 105-118.
