@@ -3,7 +3,7 @@ One impulsive disturbance suppression algorithm for audio signal.
 Solve an optimization in the adaptive filtering fashion using the *Adam* subgradient descent method.
 
 
-#  Intro
+#  Brief Introductin of the files.
  There are four files in the project:
  * **codes** file  provides three algorithms impimplementation of impulsive disturbance suppresion in both speech and record music datasets; Make sure the voice toolbox have been installed before running the code.
  * **datasets** file provides the original speech and music used in our experiments, and the raw noise/disturbance data extracted in laboratory; 
