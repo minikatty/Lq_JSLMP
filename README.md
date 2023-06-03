@@ -5,9 +5,9 @@ Solve an optimization in the adaptive filtering fashion using the *Adam* subgrad
 
 #  Intro
  There are four files in the project:
- * **codes** file  provides three algorithms impimplementation of impulsive disturbance suppresion in both speech and record music datasets; Make sure the voice toolbox have been installed before running the code.
+ * **codes** file  provides three algorithms implementation of impulsive disturbance suppression in both speech and record music datasets; Make sure the voice toolbox have been installed before running the code.
  * **datasets** file provides the original speech and music used in our experiments, and the raw noise/disturbance data extracted in laboratory; 
- * **results** file is a collection of the proceesed speech and music, .wav format;
+ * **results** file is a collection of the processed speech and music, .wav format;
  * **synthetic_data** file provides the simulated numerical experiment data, codes and some results. 
  
  # Notes
