@@ -10,7 +10,7 @@ Solve an optimization in the adaptive filtering fashion using the *Adam* subgrad
  * **results** file is a collection of the proceesed speech and music, .wav format;
  * **synthetic_data** file provides the simulated numerical experiment data, codes and some results. 
  
- # Remark
+ # Notes
 In the experiment formulas, the regularization parameters $\lambda_1$ and $\lambda_2$ correspond to $eta1$ and $eta2$ in the code. If SAR code and music data are not available on this site https://eti.pg.edu.pl/katedra-systemow-automatyki/ICASSP2017, you can also download them in the  **datasets** and **codes** files in this project.
   
 # Reference
