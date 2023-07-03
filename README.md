@@ -25,7 +25,7 @@ Fig.1 Impulsive disturbance pattern reported in [1]
 The two contaminated music datasets use two real-world impulsive disturbance samples extracted from vinyl records. One is directly taken from the study by Ciołek *et al*. [1] and partially shown in Fig.1. Recalling Fig.2, the impulsive disturbances observed in vinyl records consist of short, sudden bursts of interference with a high amplitude, rather than being a collection of random outliers with background noise. These disturbances have a brief duration and undergo a rapid increase in amplitude before quickly decaying. The SAR algorithm utilizes these characteristics to detect the disturbance.
 
 <div align=center>
-<img src="https://github.com/minikatty/Lq_JSLMP/blob/main/figures/cracknoiseto.png" width="500" >
+<img src="https://github.com/minikatty/Lq_JSLMP/blob/main/figures/cracknoiseto.png" width="450" >
 </div>
 <p align="center">
 <small>
@@ -33,13 +33,17 @@ Fig.2 $S\alpha S$-modeled impulsive disturbance and pattern
 </small>
 </p>
 
+We also record some digital audio interference by the commercial record player Sony Hx-500 at 48 kHz. The detailed extraction steps are illustrated in Fig.3, primarily by visual inspection and comparison with the original audio. The extracted impulsive disturbances exhibit a similar pattern as observed in Fig.1. In addition, we also obtained background noise by analyzing the silent segments of the vinyl record. It is worth noting that the primary frequency components of the background noise are below 20 Hz, which is outside the range of human audible hearing. The only difference between the two synthesized contaminated music datasets is background noise. The synthesized dataset without background noise is labeled as *Dataset I*, while the other is labeled as *Dataset II*. 
 
-We also record some digital audio interference by the commercial record player Sony Hx-500 at 48 kHz. The detailed extraction steps are illustrated in Fig.\ref{Extract},  
+<div align=center>
+<img src="https://github.com/minikatty/Lq_JSLMP/blob/main/figures/Extraction.png" width="500" height="400" >
+</div>
+<p align="center">
+<small>
+Fig.3 Impulsive disturbance extraction using a record player.
+</small>
+</p>
 
-
-%\caption{Impulsive disturbance extraction using record player.}\label{Extract}
-
-primarily by visual inspection and comparison with the original audio. The extracted impulsive disturbances exhibit a similar pattern as observed in Fig.\ref{ImpPaper}. In addition, we also obtained background noise by analyzing the silent segments of the vinyl record. It is worth noting that the primary frequency components of the background noise are below 20 Hz, which is outside the range of human audible hearing. The only difference between the two synthesized contaminated music datasets is background noise. The synthesized dataset without background noise is labeled as \emph{Dataset I}, while the other is labeled as *Dataset II*. 
 \begin{table}[htbp]
 \small
   \caption{Parameters settings on different datasets}
