@@ -20,7 +20,7 @@ The two contaminated music datasets use two real-world impulsive disturbance sam
 <p align="center">
 <small>
 Fig.1 Impulsive disturbance pattern reported in [1]
-<\small>
+</small>
 </p>
 <div align=center>
 <img src="https://github.com/minikatty/Lq_JSLMP/blob/main/figures/ImpPaper.png" width="500" >
