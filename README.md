@@ -44,11 +44,11 @@ Fig.3 Impulsive disturbance extraction using a record player.
 </small>
 </p>
 
-The parameters of SAR, $\ell_q$-JSLMP, and the combined algorithm are listed in Table 1, and the resulting mean PEAQs are shown in Table 2. It shows that SAR achieves the best performance when algorithms are directly applied to the music datasets. While our proposed algorithm also can effectively remove the disturbance, its mean PEAQ score is not impressive. However, during experiments, it is discovered that applying $\ell_q$-JSLMP to the SAR-processed results improves the performance by about 0.3, marked by the *combined* method. Replacing the data classified as disturbance by SAR with the results obtained from $\ell_q$-JSLMP leads to a 0.03 improvement in terms of PEAQ. These demonstrate that incorporating prior sparsity information enhances restoration performance to the music signal. Finally, we observed that the $\ell_q$-norm ($q<1$), namely the regularization term, can further improve the performance of $\ell_q$-JSLMP at the cost of extra computations, therefore it is not used in this experiment.
+The parameters of SAR, $\ell_q$-JSLMP, and the combined algorithm are listed in Table I, and the resulting mean PEAQs are shown in Table II. It shows that SAR achieves the best performance when algorithms are directly applied to the music datasets. While our proposed algorithm also can effectively remove the disturbance, its mean PEAQ score is not impressive. However, during experiments, it is discovered that applying $\ell_q$-JSLMP to the SAR-processed results improves the performance by about 0.3, marked by the *combined* method. Replacing the data classified as disturbance by SAR with the results obtained from $\ell_q$-JSLMP leads to a 0.03 improvement in terms of PEAQ. These demonstrate that incorporating prior sparsity information enhances restoration performance to the music signal. Finally, we observed that the $\ell_q$-norm ($q<1$), namely the regularization term, can further improve the performance of $\ell_q$-JSLMP at the cost of extra computations, therefore it is not used in this experiment.
 
 <p align="center">
 <small>
-TABLE I: Parameters settings on different datasets.
+TABLE I: Parameters settings on different datasets
 </small>
 </p>
 <table border="1" width="500px" cellspacing="10" align="center">
@@ -82,23 +82,34 @@ TABLE I: Parameters settings on different datasets.
 </tr>
 </table>
 
-\begin{table}[htbp]
-\small
-  \caption{Mean PEAQs($\uparrow$) of algorithms on music datasets}
-\centering\label{music}
-\begin{tabular}[tb]{ccccc}
-\toprule
-{Dataset}&\multicolumn{1}{c}{Noisy}&\multicolumn{1}{c}{$\ell_q$-JSLMP}&\multicolumn{1}{c}{SAR}&\multicolumn{1}{c}{Combined}\\
-\midrule
-{$\mathrm{I}$}      &-3.49&-1.84&-0.47&\textbf{-0.36}\\ \hline		      	          	                     
-{$\mathrm{II}$}     &-3.03&{-2.11}&-0.84&\textbf{-0.50} \\
-
-\bottomrule
-\end{tabular}
-\end{table}
-
-
-
+<p align="center">
+<small>
+TABLE II: Mean PEAQs($\uparrow$) of algorithms on music datasets
+</small>
+</p>
+<table border="1" width="500px" cellspacing="10" align="center">
+<tr>
+  <th align="center"> Dataset </th>
+  <th align="center"> Noisy </th>
+  <th align="center"> $\ell_q$-JSLMP </th>
+  <th align="center"> SAR </th>
+  <th align="center"> Combined </th>	
+</tr>
+<tr>
+  <th align ="center"> I </th>
+  <th align ="center"> $-3.49$ </th>
+  <th align ="center"> $-1.84$ </th>
+  <th align ="center"> $-0.47$ </th>
+ <th align ="center"> -0.36 </th>
+</tr>
+ <tr>
+  <th align ="center"> II </th>
+  <th align ="center"> $-3.03$ </th>
+  <th align ="center"> $-2.11$ </th>
+  <th align ="center"> $-0.84$ </th>
+ <th align ="center"> -0.50 </th>
+</tr>
+</table>
 
 # Notes
 In the experiment formulas, the regularization parameters $\lambda_1$ and $\lambda_2$ correspond to $eta1$ and $eta2$ in the code. If SAR code and music data are not available on this site https://eti.pg.edu.pl/katedra-systemow-automatyki/ICASSP2017, you can also download them in the  **datasets** and **codes** files in this project.
