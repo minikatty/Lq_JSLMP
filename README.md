@@ -46,7 +46,11 @@ Fig.3 Impulsive disturbance extraction using a record player.
 
 The parameters of SAR, $\ell_q$-JSLMP, and the combined algorithm are listed in Table 1, and the resulting mean PEAQs are shown in Table 2. It shows that SAR achieves the best performance when algorithms are directly applied to the music datasets. While our proposed algorithm also can effectively remove the disturbance, its mean PEAQ score is not impressive. However, during experiments, it is discovered that applying $\ell_q$-JSLMP to the SAR-processed results improves the performance by about 0.3, marked by the *combined* method. Replacing the data classified as disturbance by SAR with the results obtained from $\ell_q$-JSLMP leads to a 0.03 improvement in terms of PEAQ. These demonstrate that incorporating prior sparsity information enhances restoration performance to the music signal. Finally, we observed that the $\ell_q$-norm ($q<1$), namely the regularization term, can further improve the performance of $\ell_q$-JSLMP at the cost of extra computations, therefore it is not used in this experiment.
 
-
+<p align="center">
+<small>
+TABLE I: Parameters settings on different datasets.
+</small>
+</p>
 <table border="1" width="500px" cellspacing="10" align="center">
 <tr>
   <th align="center"> Dataset </th>
