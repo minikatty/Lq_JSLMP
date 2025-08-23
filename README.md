@@ -1,6 +1,6 @@
 # Lq_JSLMP
 One impulsive disturbance suppression algorithm for the audio signal. 
-Solve an optimization in the adaptive filtering fashion using the *Adam* subgradient descent method.
+Solve an optimization and $\ell_q$-norm nonconvex optimization in the adaptive filtering fashion using the *Adam* subgradient descent method.
 
 
 #  Intro
