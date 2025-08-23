@@ -1,7 +1,7 @@
 %% figure;
 clear all;
 clc;
-load('qres.mat','qres');
+load('qres.mat');
 iter_max1=6e4;
 qres1=qres(:,1:iter_max1);
  iteration=(1:1:iter_max1);

@@ -10,19 +10,20 @@ function [res,var,flag]=spJSLMP(y,q1,q2,p,sym,x_int)
 Max=max(abs(y));
 if Max ==0
     res = y;
-    flag = 1;
+    flag = 0;
     var = 'all zeros';
     return;
 else
     y=y./Max;
-    L=length(y);iter_max=5e4;N=L;tol=1e-9;
-    n=1;flag=1;H=dctmtx(L);I=eye(L);
+    L=length(y);iter_max=5e3;N=L;tol=1e-9;
+    n=1;H=dctmtx(L);I=eye(L);
+    flag=1;
 % if count>0
 %     eta1=5e-2;eta2=3.5e-2;
 % else
 %     eta1=20e-2;eta2=100e-2;
 % end
-    eta1=4e-2;eta2=10e-2;
+    eta1=5e-2;eta2=7e-2;
     lambda1=eta1/L;lambda2=eta2/L;        %adaptive filter parameters
 if (nargin<6)
     w_prev=zeros(N,1); w_new=w_prev;          %primary adaptive filter tap weights
@@ -34,8 +35,8 @@ end
     var=zeros(iter_max,1);
     
 %------------------------Adam Parameter+ VSS Setting---------------------------
-m1=zeros(N,1);v1=m1;m2=zeros(L,1);v2=m2;epsilon1=1e-8;
-alpha=1e-3;beta1=0.9;beta2=1-1e-3;epsilon=1e-8;alpha1=5;
+epsilon1=1e-8;
+alpha1=5;
 mu=0.2;mu_max=mu;mu_min=1e-3;mu_pre=mu; 
 % label=0;
 %-----------------------------------------------------------------------------
@@ -84,7 +85,10 @@ while n<=iter_max%(n~=1 && norm(w_prev-w_new)>tol && n<=iter_max) || n==1
     gra1=g1(X,e,w_prev); % primary gradient
     gra2=g2(Ik,e,v_prev); % secondary gradient   
     
-    if flag      
+    if flag
+        m1=zeros(N,1);v1=m1;m2=zeros(L,1);v2=m2;alpha=1e-3;
+        beta1=0.9;beta2=1-1e-3;epsilon=1e-8;
+
         m1=beta1*m1+(1-beta1)*gra1;                  % update bias first moment estimate
         v1=beta2*v1+(1-beta2)*(gra1.*gra1);            % update biased second raw moment estimate
         m11=m1/(1-beta1^(n+1));                  % compute biased-corrected first moment estimate
@@ -128,5 +132,11 @@ end
 % JSLMP.flag=flag;
 % JSLMP.label=label;
 res=H*w_new.*Max;
+%%%%%%%%%%%%%%% memery calculation %%%%%%%%%%%%%%%
+% clear v_new w_new var mu_new I
+% variables = whos;
+% bytes = [variables.bytes]; %字节数
+% ttl_bytes = sum(bytes,2);
+% memery_used = ttl_bytes/1000^2/2 % in float32 and MB
 end
 end

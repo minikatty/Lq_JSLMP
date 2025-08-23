@@ -1,0 +1,32 @@
+# 忽略所有Excel文件
+*.xlsx
+~$*.xlsx
+
+# 忽略所有asv备份
+*.asv
+
+# 忽略pycache
+__pycache__/
+codes/Lq_JSLMP/__pycache__/
+
+# 忽略所有results文件夹及其内容
+results/
+codes/Lq_JSLMP/SAR_speech_results/
+codes/Lq_JSLMP/LpADM_speech_results/
+codes/Lq_JSLMP/Lq_JSLMP_speech_results/
+codes/Lq_JSLMP/Lq_JSLMP_speech_results_v2/
+codes/Lq_JSLMP/Lq_JSLMP_speech_results_val/
+codes/Lq_JSLMP/SAR_speech_results/
+codes/Lq_JSLMP/eh_noisy_dataset_results_withFinetuning/
+codes/Lq_JSLMP/eh_noisy_dataset_results_withoutFinetuning/
+codes/Lq_JSLMP/noisy_dataset/
+results/Speech/
+codes/SAR/noisy_dataset/
+codes/Lq_JSLMP/noisy_dataset/
+codes/Lq_JSLMP/clean_speech/
+codes/SAR/SAR_speech_results/
+
+# 忽略所有 .wav 文件
+*.wav
+
+# 如果还有别的不想传，继续补充
