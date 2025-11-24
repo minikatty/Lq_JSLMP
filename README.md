@@ -113,7 +113,25 @@ TABLE II: Mean PEAQs($\uparrow$) of algorithms on music datasets
 
 # Notes
 In the experiment formulas, the regularization parameters $\lambda_1$ and $\lambda_2$ correspond to $eta1$ and $eta2$ in the code. If SAR code and music data are not available on this site https://eti.pg.edu.pl/katedra-systemow-automatyki/ICASSP2017, you can also download them in the  **datasets** and **codes** files in this project.
-  
+
+# Citation
+
+If you use this code for your research, please cite our paper:
+
+**A novel sparse adaptive filter for suppressing impulsive disturbance in audio signals**  
+*Signal Processing, Volume 241, April 2026, 110390*
+
+```bibtex
+@article{zhou2025novel,
+  title={A novel sparse adaptive filter for suppressing impulsive disturbance in audio signals},
+  author={Zhou, Lei and Liu, Hongqing and Gan, Lu and Zhou, Yi and Nied{\'z}wiecki, Maciej and Truong, Trieu-Kien},
+  journal={Signal Processing},
+  pages={110390},
+  year={2025},
+  publisher={Elsevier},
+  doi={10.1016/j.sigpro.2025.110390}
+}
+```  
 # Reference
 The implementation of the compared algorithm is based on the work of several researchers, which was downloaded from their respective homepages. The main corresponding works are listed as follows:
 
